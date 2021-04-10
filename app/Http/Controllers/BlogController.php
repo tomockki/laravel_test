@@ -11,7 +11,7 @@ class BlogController extends Controller
      *
      * @return view
      */
-    public function showKist(){
+    public function showList(){
         return view('blog.list');
 
     }

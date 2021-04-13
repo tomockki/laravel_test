@@ -13,3 +13,6 @@
 
 //ブログ一覧画面を表示
 Route::get('/', 'BlogController@showList')->name('blogList');
+
+//ブログ詳細画面を表示
+Route::get('/blog/{id}', 'BlogController@showDetail')->name('show');

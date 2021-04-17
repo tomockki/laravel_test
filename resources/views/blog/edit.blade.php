@@ -6,7 +6,7 @@
         <h2>ブログ編集フォーム</h2>
         <form method="POST" action="{{ route('update') }}" onSubmit="return checkSubmit()">
         @csrf
-            <input type="hidden" name="id" value="{{  $blog->id }}">
+            <input type="hidden" name="id" value="{{ $blog->id }}">
             <div class="form-group">
                 <label for="title">
                     タイトル
@@ -52,12 +52,12 @@
     </div>
 </div>
 <script>
-function checkSubmit(){
-if(window.confirm('更新してよろしいですか？')){
-    return true;
-} else {
-    return false;
-}
-}
+    function checkSubmit(){
+        if(window.confirm('更新してよろしいですか？')){
+            return true;
+        } else {
+            return false;
+        }
+    }
 </script>
 @endsection

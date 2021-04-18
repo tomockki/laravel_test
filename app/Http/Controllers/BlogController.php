@@ -108,7 +108,6 @@ class BlogController extends Controller
      * @return view
      */
     public function exeDelete($id){
-
         if (empty($id)){
             \Session::flash('err_msg', 'データがありません。');
             return redirect(route('blogList'));
